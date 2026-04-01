@@ -1,0 +1,47 @@
+.allHome {
+    height: 716px;
+    max-width: 100%;
+    background-image: url('../backMain.svg');
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 0 80px 0 0;
+}
+.wind {
+    height: 443px;
+    max-width: 643px;
+    background-color: #FFF3E3;
+    padding: 20px;
+    border-radius: 10px;
+}
+.wind h3 {
+    font-family: sans-serif;
+    font-weight: bold;
+    color: rgb(51, 51, 51);
+    font-size: 20px;
+}
+.wind h1 {
+    font-family: sans-serif;
+    font-weight: bold;
+    color: peru;
+    font-size: 52px;
+}
+.wind p {
+    font-family: sans-serif;
+    font-weight: bold;
+    color: rgb(51, 51, 51);
+    font-size: 16px;
+}
+.wind button {
+    color: white;
+    background-color: peru;
+    height: 74px;
+    width: 222px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+.wind button:hover {
+    background-color: rgb(126, 82, 39);
+    cursor: pointer;
+}

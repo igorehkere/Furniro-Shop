@@ -1,0 +1,28 @@
+import { useState } from 'react'
+import style from '../pages/Shop.module.css'
+
+type props = {
+    getPage: (page: number) => void
+}
+
+export function PageBar ({getPage}: props) {
+    const [page, setPage] = useState<number>(1);
+    return (
+            <div className={style.pageBar}>
+                <button onClick={() => {
+                    if (page > 1) {
+                        setPage(page - 1)
+                        getPage(page - 1);
+                    }
+                }}>&lt;</button>
+                <p>{page}</p>
+                <button onClick={() => {
+                    if (page < 5) {
+                        setPage(page + 1);
+                        getPage(page + 1);                        
+                    }
+
+                }}>&gt;</button>
+            </div>      
+    )
+}
