@@ -1,7 +1,11 @@
+import { Hat } from "../ui/Hat"
+import { Support } from "../ui/Support"
+
 export function About() {
     return (
-        <>
-            <h1>About</h1>
-        </>
+        <div>
+            <Hat namePage='about'/>
+            <Support/>
+        </div>
     )
 }

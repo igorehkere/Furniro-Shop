@@ -41,6 +41,10 @@
     font-size: 16px;
     font-weight: bold;
 }
+.wind button a {
+    text-decoration: none;
+    color: inherit;
+}
 .wind button:hover {
     background-color: rgb(126, 82, 39);
     cursor: pointer;
