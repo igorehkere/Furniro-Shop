@@ -1,0 +1,25 @@
+import style from './NewsList.module.css'
+import type { art } from './NewsList';
+
+type props = {
+    newItem: art,
+}
+
+export function NewsItem({newItem}: props) {
+    const date = new Date(newItem.publishedAt);
+    return (
+        <div className={style.post}>
+            <img src={newItem.urlToImage}/>
+            <div className={style.reaction}>
+                <img src='./src/userLogo.svg'/>
+                <p>{newItem.author}</p>
+                <img src='./src/calendarLogo.svg'/>
+                <p>{date.toLocaleString()}</p>
+            </div>
+            <p className={style.title}>{newItem.title}</p>
+            <p className={style.description}>{newItem.description}</p>
+            <p className={style.url}><a href={newItem.url}>Read more</a></p>
+            <hr/>
+        </div>
+    )
+}
