@@ -1,5 +1,5 @@
 import style from './ProductItem.module.css'
-import type { prod } from './ProductList';
+import type { prod } from '../bll/useProducts';
 
 type props = {
     product: prod,
@@ -21,5 +21,3 @@ export function ProductItem ({product}: props) {
         </div>
     )
 }
-
-// product.images[0]

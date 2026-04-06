@@ -16,6 +16,7 @@
 .loading {
     display: flex;
     justify-content: center;
+    min-width: 720px;
     padding-top: 100px;
     padding-bottom: 100px;
 }
@@ -101,4 +102,11 @@
 }
 .bar input:focus {
     outline: none;
+}
+.noNews {
+    width: 820px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
 }

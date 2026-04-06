@@ -11,7 +11,7 @@ export function Home() {
                     <h1>Discover Our</h1>
                     <h1>New Collection</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
-                    <button><Link to='/shop'>BUY NOW</Link></button>
+                    <Link to='/shop'><button>BUY NOW</button></Link>
                 </div>
             </div>   
             <p>Soon...</p>

@@ -1,5 +1,5 @@
 import style from './NewsList.module.css'
-import type { art } from './NewsList';
+import type { art } from '../bll/useNews';
 
 type props = {
     newItem: art,

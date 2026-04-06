@@ -12,10 +12,10 @@ export function Navigate() {
                 <nav className={styles.navi}>
                     <img className={styles.logo} src='./src/logo.svg'/>
                     <div className={styles.btns}>
-                        <button><Link to='/'>Home</Link></button>
-                        <button><Link to='/shop'>Shop</Link></button>
-                        <button><Link to='/news'>News</Link></button>
-                        <button><Link to='/contact'>Contact</Link></button>
+                        <Link to='/'><button>Home</button></Link>
+                        <Link to='/shop'><button>Shop</button></Link>
+                        <Link to='/news'><button>News</button></Link>
+                        <Link to='/contact'><button>Contact</button></Link>
                     </div>
                 </nav>
                 <Routes>
