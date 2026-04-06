@@ -1,11 +1,15 @@
-
+const prepareHeaders = () => {
+    const apiKey = import.meta.env.VITE_API_KEY;
+    if (!apiKey) return undefined
+    return {
+        'X-Api-Key': apiKey,
+    }
+}
 
 export function getNews (activeFindBut: string) {
     const promise = fetch(`https://newsapi.org/v2/everything?q=${activeFindBut}`, {
             method: 'GET',
-            headers: {
-                'X-Api-Key': 'e13a2e0a35f94b3e903efbc28345425e'
-            }
+            headers: prepareHeaders(),
     }).then(res => res.json());
     return promise;
 }
