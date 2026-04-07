@@ -4,13 +4,14 @@ import { Home } from '../pages/Home';
 import { News } from '../pages/News';
 import { Contact } from '../pages/Contact';
 import { Shop } from '../pages/Shop';
+import { DetailsProduct } from '../ui/DetailsProduct';
 
 export function Navigate() {
     return (
         <>
             <Router>
                 <nav className={styles.navi}>
-                    <img className={styles.logo} src='./src/logo.svg'/>
+                    <img className={styles.logo} src='/src/logo.svg'/>
                     <div className={styles.btns}>
                         <Link to='/'><button>Home</button></Link>
                         <Link to='/shop'><button>Shop</button></Link>
@@ -23,6 +24,7 @@ export function Navigate() {
                     <Route path='/shop' element={<Shop/>}/>
                     <Route path='/news' element={<News/>}/>
                     <Route path='/contact' element={<Contact/>}/>
+                    <Route path='/shop/:id' element={<DetailsProduct/>}/>
                 </Routes>
             </Router>
         </>

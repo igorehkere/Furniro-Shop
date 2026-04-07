@@ -1,7 +1,6 @@
 import { PageBar } from '../ui/PageBar'
 import { ProductList } from '../ui/ProductList'
 import { Support } from '../ui/Support'
-import { useState } from 'react'
 import { Hat } from '../ui/Hat'
 import { usePageClothes } from '../bll/usePageClothes'
 

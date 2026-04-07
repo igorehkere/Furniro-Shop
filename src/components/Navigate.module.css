@@ -1,8 +1,22 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('../font/Poppins-Regular.ttf');
+    font-weight: normal;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('../font/Poppins-Bold.ttf');
+    font-weight: bold;
+    font-display: swap;
+    font-style: normal;
+}
+
 .btns button {
     min-height: 40px;
     min-width: 60px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: bold;
+    font-family:'Poppins', sans-serif;
     border: none;
     border-radius: 18px;
     background-color: white;

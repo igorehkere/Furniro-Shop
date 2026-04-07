@@ -1,6 +1,7 @@
 import style from './ProductList.module.css'
 import { ProductItem } from "./ProductItem";
 import { useProducts } from "../bll/useProducts";
+import { Link } from 'react-router-dom';
 
 type props = {
     changePage: number,
@@ -19,7 +20,10 @@ export function ProductList({changePage}: props) {
         <div className={style.list}>
             {products.map((product) => {
                 return (
-                    <ProductItem key={product.id} product={product}/>
+                    <Link to={product.id} key={product.id} >
+                        <ProductItem product={product}/>   
+                    </Link>
+                  
                 )
             })}
         </div>

@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('../font/Poppins-Regular.ttf');
+    font-weight: normal;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('../font/Poppins-Bold.ttf');
+    font-weight: bold;
+    font-display: swap;
+    font-style: normal;
+}
+
+.loading img {
+    height: 55px;
+    width: 55px;
+}
+.loading {
+    min-width: 100%;
+    min-height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.toolBar {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+    min-height: 100px;
+    background-color: #F9F1E7;
+    align-items: center;
+    padding-left: 100px;
+    font-family: 'Poppins', sans-serif;
+}
+.toolBar a {
+    text-decoration: none;
+
+}
+.toolBar p {
+    color: #9F9F9F;
+    font-size: 16px;
+}
+.toolBar span {
+    color: black;
+    font-size: 25px;
+}

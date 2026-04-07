@@ -1,3 +1,18 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('../font/Poppins-Regular.ttf');
+    font-weight: normal;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('../font/Poppins-Bold.ttf');
+    font-weight: bold;
+    font-display: swap;
+    font-style: normal;
+}
+
 .allHome {
     height: 716px;
     max-width: 100%;
@@ -15,8 +30,8 @@
     border-radius: 10px;
 }
 .wind h3 {
-    font-family: sans-serif;
-    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    
     color: rgb(51, 51, 51);
     font-size: 20px;
 }
@@ -27,8 +42,7 @@
     font-size: 52px;
 }
 .wind p {
-    font-family: sans-serif;
-    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
     color: rgb(51, 51, 51);
     font-size: 16px;
 }
