@@ -1,9 +1,7 @@
 .gallery {
     display: flex;
     gap: 20px;
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: #F9F1E7;
+    width: 600px;
     border-radius: 10px;
 }
 

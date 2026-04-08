@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 import style from './DetailsProduct.module.css'
 import { ProductGallery } from "./ProductGallery";
 import { Link } from "react-router-dom";
+import { Counter } from "./Counter";
+import { Support } from "./Support";
 
 type infoProd = {
     id: string,
@@ -37,7 +39,25 @@ export function DetailsProduct () {
                 <Link to='/shop'><p>Shop</p></Link>
                 <span>&gt;</span>
             </nav>
-            <ProductGallery images={product.images}/>
+            <div className={style.card}>
+               <ProductGallery images={product.images}/> 
+               <div className={style.inform}>
+                    <div>
+                        <p className={style.title}>{product.name}</p>
+                        <p className={style.price}>₽ {product.price}</p>
+                        <p className={style.rating}>Рейтинг: {product.rating}</p>
+                        <p className={style.description}>{product.description}</p>
+                    </div>
+                    
+                    <div className={style.btns}>
+                        <Counter/>
+                        <button className={style.add}>Add to Cart</button>
+                    </div>
+                    
+               </div>
+            </div>
+            <Support/>
+            
         </div>
         
     )
