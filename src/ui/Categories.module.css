@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('../font/Poppins-Regular.ttf');
+    font-weight: normal;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('../font/Poppins-Bold.ttf');
+    font-weight: bold;
+    font-display: swap;
+    font-style: normal;
+}
+
+.cat {
+    width: 100%;
+    min-height: 77px;
+    padding: 0 0 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title {
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+}
+.loading img {
+    height: 55px;
+    width: 55px;
+}
+.loading {
+    min-width: 100%;
+    min-height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+.card img {
+    height: 480px;
+    width: 381px;
+    border-radius: 10px;
+}
+.card p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+.card:hover {
+    background-color: rgb(206, 206, 206);
+    cursor: pointer;
+    transition: background-color 0.3s ease-in;
+}
+.cards {
+    display: flex;
+    gap: 50px;
+}

@@ -18,3 +18,13 @@ export function getClothes (changePage: number) {
     const promise = fetch(`https://clothapi.progskill.ru/v1/products?page=${changePage}`).then(res => res.json());
     return promise;
 }
+
+export function getCategories () {
+    const promise = fetch('https://clothapi.progskill.ru/v1/categories').then(res => res.json());
+    return promise;
+}
+
+export function getDetails (id: string | undefined) {
+    const promise = fetch(`https://clothapi.progskill.ru/v1/products/${id}`).then(res => res.json());
+    return promise;
+}

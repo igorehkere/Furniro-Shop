@@ -5,23 +5,11 @@ import { ProductGallery } from "./ProductGallery";
 import { Link } from "react-router-dom";
 import { Counter } from "./Counter";
 import { Support } from "./Support";
-
-type infoProd = {
-    id: string,
-    name: string,
-    description: string,
-    price: number,
-    images: Array<string>,
-    rating: number,
-}
+import { useDetails } from "../bll/useDetails";
 
 export function DetailsProduct () {
     const {id} = useParams();
-    const [product, setProduct] = useState<infoProd | null>(null);
-
-    useEffect(() => {
-        fetch(`https://clothapi.progskill.ru/v1/products/${id}`).then(res => res.json()).then(js => setProduct(js))
-    }, [])
+    const {product, prodInCard, setProdInCard} = useDetails(id);
     console.log(product);
     
     if (product === null) {
@@ -51,7 +39,15 @@ export function DetailsProduct () {
                     
                     <div className={style.btns}>
                         <Counter/>
-                        <button className={style.add}>Add to Cart</button>
+                        <button className={style.add} style={{backgroundColor: prodInCard ? 'rgb(201, 201, 201)' : 'white'}} onClick={() => {
+                            if (prodInCard) {
+                                alert('Товар успешно удален из корзины')
+                            } else {
+                                alert('Товар успешно добавлен в корзину')
+                            }
+                            setProdInCard(!prodInCard);
+                            
+                        }}>{prodInCard ? 'In Cart' : 'Add to Cart'}</button>
                     </div>
                     
                </div>
