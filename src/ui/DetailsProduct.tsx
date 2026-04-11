@@ -1,5 +1,4 @@
 import { useParams } from "react-router-dom";
-import { useState, useEffect } from "react";
 import style from './DetailsProduct.module.css'
 import { ProductGallery } from "./ProductGallery";
 import { Link } from "react-router-dom";

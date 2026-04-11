@@ -5,6 +5,7 @@ import { News } from '../pages/News';
 import { Contact } from '../pages/Contact';
 import { Shop } from '../pages/Shop';
 import { DetailsProduct } from '../ui/DetailsProduct';
+import { SelectedCategory } from '../ui/SelectedCategory';
 
 export function Navigate() {
     return (
@@ -25,6 +26,7 @@ export function Navigate() {
                     <Route path='/news' element={<News/>}/>
                     <Route path='/contact' element={<Contact/>}/>
                     <Route path='/shop/:id' element={<DetailsProduct/>}/>
+                    <Route path='/:id' element={<SelectedCategory/>}/>
                 </Routes>
             </Router>
         </>

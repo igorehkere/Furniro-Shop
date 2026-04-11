@@ -12,7 +12,7 @@ export function Shop() {
     return (
         <div>
             <Hat namePage='shop'/>
-            <PageBar getPage={getPage}/>
+            <PageBar getPage={getPage} maxPages={5}/>
             <ProductList changePage={changePage}/>
             <Support/>
         </div>

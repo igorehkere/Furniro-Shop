@@ -1,5 +1,6 @@
 import style from './Categories.module.css'
 import { useCategories } from '../bll/useCategories'
+import { Link } from 'react-router-dom';
 
 export function Categories () {
 
@@ -25,10 +26,13 @@ export function Categories () {
                         imgCard = './src/coat.jpeg';
                     }
                     return (
-                        <div className={style.card} key={category.id}>
-                            <img src={imgCard}/>
-                            <p>{category.name}</p>
-                        </div>
+                        <Link to={category.id} key={category.id}>
+                            <div className={style.card}>
+                                <img src={imgCard}/>
+                                <p>{category.name}</p>
+                            </div>
+                        </Link>
+                        
                     )
                 })}
             </div>

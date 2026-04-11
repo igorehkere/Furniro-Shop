@@ -3,9 +3,10 @@ import style from '../pages/Shop.module.css'
 
 type props = {
     getPage: (page: number) => void
+    maxPages: number,
 }
 
-export function PageBar ({getPage}: props) {
+export function PageBar ({getPage, maxPages}: props) {
     const [page, setPage] = useState<number>(1);
     return (
             <div className={style.pageBar}>
@@ -17,7 +18,7 @@ export function PageBar ({getPage}: props) {
                 }}>&lt;</button>
                 <p>{page}</p>
                 <button onClick={() => {
-                    if (page < 5) {
+                    if (page < maxPages) {
                         setPage(page + 1);
                         getPage(page + 1);                        
                     }

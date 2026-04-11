@@ -44,9 +44,11 @@
     gap: 15px;
     font-weight: bold;
     font-family: sans-serif;
+    
 }
 .pageBar p {
     font-size: 20px;
+    color: black;
 }
 .pageBar button {
     height: 50px;
