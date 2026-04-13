@@ -2,6 +2,7 @@ import style from './SelectedCategory.module.css'
 import { useState, useEffect } from 'react';
 import type { prod } from '../bll/useProducts';
 import { ProductItem } from './ProductItem';
+import { Link } from 'react-router-dom';
 
 type productCat = {
     data: Array<prod>,
@@ -33,9 +34,9 @@ export function SelectedCategoryList({id, page}: props) {
         <div className={style.prodCards}>
             {productCategory.data.map((product) => {
                 return (
-                    <div key={product.id}>
+                    <Link to={`/shop/${product.id}`} key={product.id}>
                         <ProductItem product={product}/>
-                    </div>
+                    </Link>
                 )
             })} 
         </div>

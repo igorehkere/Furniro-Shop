@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('../font/Poppins-Regular.ttf');
+    font-weight: normal;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('../font/Poppins-Bold.ttf');
+    font-weight: bold;
+    font-display: swap;
+    font-style: normal;
+}
+
+.title {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title span{
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+}
+.title p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #9F9F9F;
+    width: 644px;
+    text-align: center;
+}
+.location {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: start;
+    height: 124px;
+    width: 305px;
+}
+.dv p {
+    margin: 0 0 5px 0;
+    font-family: 'Poppins', sans-serif;
+}
+.phone {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: start;
+}
+.clock {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: start;
+}
+.bold {
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+.address {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.form {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+}
+.inp p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+.inp input {
+    width: 529px;
+    min-height: 75px;
+    border-radius: 10px;
+    border: 1px solid #9F9F9F;
+    padding-left: 30px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+.inp input:focus {
+    outline: none;
+}
+.inp button{
+    background-color: #B88E2F;
+    color: white;
+    border-radius: 5px;
+    height: 55px;
+    width: 237px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+.inp button:hover {
+    cursor: pointer;
+    background-color: #9b7927;
+}
+.inp {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.form {
+    height: 843px;
+}
