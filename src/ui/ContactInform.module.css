@@ -112,3 +112,29 @@
 .form {
     height: 843px;
 }
+.submit {
+    height: 443px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.submit p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 34px;
+    font-weight: bold;
+}
+.submit button {
+    background-color: #B88E2F;
+    color: white;
+    border-radius: 5px;
+    height: 55px;
+    width: 237px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+.submit button:hover {
+    cursor: pointer;
+    background-color: #9b7927;
+}
