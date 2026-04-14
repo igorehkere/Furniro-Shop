@@ -9,9 +9,10 @@ import { SelectedCategory } from '../ui/SelectedCategory';
 import { getAssetPath } from '../utils/path';
 
 export function Navigate() {
+    const basename = '/Furniro-Shop';
     return (
         <>
-            <Router>
+            <Router basename={basename}>
                 <nav className={styles.navi}>
                     <img className={styles.logo} src={getAssetPath('images/logo.svg')}/>
                     <div className={styles.btns}>

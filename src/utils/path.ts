@@ -5,5 +5,5 @@ export const getAssetPath = (path: string) => {
         return `/Furniro-Shop/${cleanPath}`;
     }
 
-    return `/${cleanPath}`;
+    return `/Furniro-Shop/${cleanPath}`;
 }; 
