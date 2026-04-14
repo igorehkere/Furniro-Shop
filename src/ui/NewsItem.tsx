@@ -1,5 +1,6 @@
 import style from './NewsList.module.css'
 import type { art } from '../bll/useNews';
+import { getAssetPath } from '../utils/path';
 
 type props = {
     newItem: art,
@@ -11,9 +12,9 @@ export function NewsItem({newItem}: props) {
         <div className={style.post}>
             <img src={newItem.urlToImage}/>
             <div className={style.reaction}>
-                <img src='./src/userLogo.svg'/>
+                <img src={getAssetPath('images/userLogo.svg')}/>
                 <p>{newItem.author}</p>
-                <img src='./src/calendarLogo.svg'/>
+                <img src={getAssetPath('images/calendarLogo.svg')}/>
                 <p>{date.toLocaleString()}</p>
             </div>
             <p className={style.title}>{newItem.title}</p>

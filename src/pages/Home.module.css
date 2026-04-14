@@ -16,7 +16,6 @@
 .allHome {
     height: 716px;
     max-width: 100%;
-    background-image: url('../backMain.svg');
     display: flex;
     justify-content: end;
     align-items: center;

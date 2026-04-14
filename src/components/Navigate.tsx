@@ -6,13 +6,14 @@ import { Contact } from '../pages/Contact';
 import { Shop } from '../pages/Shop';
 import { DetailsProduct } from '../ui/DetailsProduct';
 import { SelectedCategory } from '../ui/SelectedCategory';
+import { getAssetPath } from '../utils/path';
 
 export function Navigate() {
     return (
         <>
             <Router>
                 <nav className={styles.navi}>
-                    <img className={styles.logo} src='/src/logo.svg'/>
+                    <img className={styles.logo} src={getAssetPath('images/logo.svg')}/>
                     <div className={styles.btns}>
                         <Link to='/'><button>Home</button></Link>
                         <Link to='/shop'><button>Shop</button></Link>

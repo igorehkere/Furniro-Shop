@@ -1,12 +1,13 @@
 import style from './ProductList.module.css'
+import { getAssetPath } from '../utils/path'
 
 export function Support() {
     return (
         <div className={style.sup}>
-            <img src='/src/highQuantity.svg'/>
-            <img src='/src/warranty.svg'/>
-            <img src='/src/free.svg'/>
-            <img src='/src/support.svg'/>
+            <img src={getAssetPath('images/highQuantity.svg')}/>
+            <img src={getAssetPath('images/warranty.svg')}/>
+            <img src={getAssetPath('images/free.svg')}/>
+            <img src={getAssetPath('images/support.svg')}/>
         </div>
     )
 }

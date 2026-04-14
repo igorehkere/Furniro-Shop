@@ -1,6 +1,7 @@
 import style from './Categories.module.css'
 import { useCategories } from '../bll/useCategories'
 import { Link } from 'react-router-dom';
+import { getAssetPath } from '../utils/path';
 
 export function Categories () {
 
@@ -8,7 +9,7 @@ export function Categories () {
     if (categories === null) {
         return (
             <div className={style.loading}>
-                <img src='./src/download.gif'/>
+                <img src={getAssetPath('images/download.gif')}/>
             </div>
         )
     }
@@ -19,11 +20,11 @@ export function Categories () {
                 {categories.map((category) => {
                     let imgCard = '';
                     if (category.name === 'Футболки') {
-                        imgCard = './src/t-short.jpeg';
+                        imgCard = getAssetPath('images/t-short.jpeg');
                     } else if (category.name === 'Худи') {
-                        imgCard = './src/hoodie.jpeg';
+                        imgCard = getAssetPath('images/hoodie.jpeg');
                     } else if (category.name === 'Куртки') {
-                        imgCard = './src/coat.jpeg';
+                        imgCard = getAssetPath('images/coat.jpeg');
                     }
                     return (
                         <Link to={category.id} key={category.id}>

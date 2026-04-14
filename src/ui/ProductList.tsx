@@ -2,6 +2,7 @@ import style from './ProductList.module.css'
 import { ProductItem } from "./ProductItem";
 import { useProducts } from "../bll/useProducts";
 import { Link } from 'react-router-dom';
+import { getAssetPath } from '../utils/path';
 
 type props = {
     changePage: number,
@@ -12,7 +13,7 @@ export function ProductList({changePage}: props) {
     if (products === null) {
         return (
             <div className={style.loading}>
-                <img src='./src/download.gif'/>
+                <img src={getAssetPath('images/download.gif')}/>
             </div>
         )
     }

@@ -2,6 +2,7 @@ import style from './NewsList.module.css'
 import { NewsItem } from "./NewsItem";
 import { FindBar } from "./FindBar";
 import { useNews } from "../bll/useNews";
+import { getAssetPath } from '../utils/path';
 
 export function NewsList() {
     const {news, setActiveFindBut, isLoading} = useNews();
@@ -13,7 +14,7 @@ export function NewsList() {
             
             {isLoading && (
                     <div className={style.loading}>
-                        <img src='./src/download.gif' alt="Loading"/>
+                        <img src={getAssetPath('images/download.gif')} alt="Loading"/>
                     </div>
             )}
             <div>

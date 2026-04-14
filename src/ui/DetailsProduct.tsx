@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { Counter } from "./Counter";
 import { Support } from "./Support";
 import { useDetails } from "../bll/useDetails";
+import { getAssetPath } from "../utils/path";
 
 export function DetailsProduct () {
     const {id} = useParams();
@@ -14,7 +15,7 @@ export function DetailsProduct () {
     if (product === null) {
         return (
             <div className={style.loading}>
-                <img src='/src/download.gif'/>
+                <img src={getAssetPath('images/download.gif')}/>
             </div>
         )
     }

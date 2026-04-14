@@ -2,6 +2,7 @@ import style from './SelectedCategory.module.css'
 import { ProductItem } from './ProductItem';
 import { Link } from 'react-router-dom';
 import { useSelectCategory } from '../bll/useSelectCategory';
+import { getAssetPath } from '../utils/path';
 
 type props = {
     id: string | undefined,
@@ -14,7 +15,7 @@ export function SelectedCategoryList({id, page}: props) {
     if (productCategory === null) {
         return (
             <div className={style.loading}>
-                <img src='/src/download.gif'/>
+                <img src={getAssetPath('images/download.gif')}/>
             </div>
         )
     }

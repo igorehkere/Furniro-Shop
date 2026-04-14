@@ -1,5 +1,6 @@
 import style from './ContactInform.module.css'
 import { useState } from 'react'
+import { getAssetPath } from '../utils/path';
 
 export function ContactForm () {
 
@@ -10,14 +11,14 @@ export function ContactForm () {
                 <div className={style.form}>
                     <div className={style.address}>
                         <div className={style.location}>
-                            <img src='./src/location.svg'/>
+                            <img src={getAssetPath('images/location.svg')}/>
                             <div className={style.dv}>
                                 <p className={style.bold}>Address</p>
                                 <p>236 5th SE Avenue, New York NY10000, United States</p>
                             </div>
                         </div>
                         <div className={style.phone}>
-                            <img src='./src/phone.svg'/>
+                            <img src={getAssetPath('images/phone.svg')}/>
                             <div className={style.dv}>
                                 <p className={style.bold}>Phone</p>
                                 <p>Mobile: +(84) 546-6789</p>
@@ -25,7 +26,7 @@ export function ContactForm () {
                             </div>
                         </div>
                         <div className={style.clock}>
-                            <img src='./src/clock.svg'/>
+                            <img src={getAssetPath('images/clock.svg')}/>
                             <div className={style.dv}>
                                 <p className={style.bold}>Working Time</p>
                                 <p>Monday-Friday: 9:00 - 22:00</p>
