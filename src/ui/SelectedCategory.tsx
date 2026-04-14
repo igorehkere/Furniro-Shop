@@ -9,13 +9,9 @@ export function SelectedCategory () {
     const {id} = useParams();
 
     const [page, setPage] = useState(1);
-    // const [maxPages, setMaxPages] = useState(1);
     const getPage = (pg: number) => {
         setPage(pg);
     } 
-    // const getMaxPage = (maxpg: number) {
-    //     setMaxPages(maxpg);
-    // }
     let category = '';
     if (id === '02966ea0-7f83-42bb-a9a3-51e83fc03621') {
         category = 'Футболки';

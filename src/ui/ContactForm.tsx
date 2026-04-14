@@ -46,15 +46,16 @@ export function ContactForm () {
                             setSubmit(!submit);
                         }}>Submit</button>
                     </div>
-                </div> )}
-                {submit && (
-                    <div className={style.submit}>
-                        <p>Thanks for the request!</p>
-                        <button onClick={() => {
-                            setSubmit(!submit);
-                        }}>Back to form</button>
-                    </div>
-                )}
+                </div> 
+            )}
+            {submit && (
+                <div className={style.submit}>
+                    <p>Thanks for the request!</p>
+                    <button onClick={() => {
+                        setSubmit(!submit);
+                    }}>Back to form</button>
+                </div>
+            )}
         </div>
     )
 }
