@@ -27,10 +27,13 @@ export function SelectedCategory () {
     return (
         <div className={style.tool}>
             <nav className={style.toolBar}>
-                <Link to='/'><p>Home</p></Link>
-                <span>&gt;</span>
-                <p>{category}</p>
-                <span>&gt;</span>
+                <div className={style.changePage}>
+                    <Link to='/'><p>Home</p></Link>
+                    <span>&gt;</span>
+                    <p>{category}</p>
+                    <span>&gt;</span>
+                </div>
+                
                 <div>
                     <PageBar getPage={getPage} maxPages={3}/>
                 </div>

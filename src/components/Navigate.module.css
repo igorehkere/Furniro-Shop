@@ -32,7 +32,8 @@
 }
 .navi {
     min-height: 100px;
-    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -41,4 +42,9 @@
 .btns {
     display: flex;
     gap: 20px;
+}
+@media (max-width: 520px) {
+    .navi {
+        flex-wrap: wrap;
+    }
 }

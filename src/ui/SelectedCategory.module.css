@@ -55,4 +55,34 @@
     text-decoration: none;
     color: inherit;
 }
+.changePage {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
+@media (max-width: 1400px) {
+    .prodCards {
+        grid-template-columns: repeat(3, 1fr);
+        place-items: center;
+    }
+}
+@media (max-width: 800px) {
+    .prodCards {
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+    }
+}
+@media (max-width: 530px) {
+    .prodCards {
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center;
+    }
+}
+@media (max-width: 430px) {
+    .toolBar {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+}

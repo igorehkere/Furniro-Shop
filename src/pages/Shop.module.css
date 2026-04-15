@@ -15,6 +15,7 @@
 
 .hat {
     width: 100%;
+    box-sizing: border-box;
     height: 316px;
     display: flex;
     justify-content: center;
@@ -61,4 +62,9 @@
 .pageBar button:hover {
     background-color: rgb(177, 146, 116);
     cursor: pointer;
+}
+@media (max-width: 1000px) {
+    .hat {
+
+    }
 }
