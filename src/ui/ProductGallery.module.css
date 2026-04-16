@@ -42,3 +42,31 @@
 .mainImage img:hover {
     transform: scale(1.02);
 }
+
+@media (max-width: 570px) {
+    .gallery {
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 350px;
+        
+    }
+    .thumbnails {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        justify-items: center;    
+        align-items: center;
+        width: 100%;             
+        margin: 0 auto;           
+        justify-content: center; 
+    }
+    .thumbnail {
+        width: 80px;
+        height: 100px;
+    }
+}
+@media (max-width: 390px) {
+    .gallery {
+        width: 300px;
+    }
+}
